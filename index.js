@@ -19,9 +19,9 @@ dotenv.config();
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-// app.get('/', (req, res) => {
-//     res.send('App is Running');
-// })
+app.get('/', (req, res) => {
+    res.send('App is Running');
+})
 
 const PORT = process.env.PORT || 5000;
 
